@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni & Student Web Page</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Alumni & Student Portal</h1>
+    <nav>
+      <ul>
+        <li><a href="#alumni">Alumni</a></li>
+        <li><a href="#students">Students</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="alumni">
+    <h2>Alumni</h2>
+    <p>Stay connected with your fellow graduates, find career opportunities, and give back to your community.</p>
+    <button onclick="showForm('alumni')">Join Alumni Network</button>
+    
+    <form id="alumniForm" class="hidden">
+      <h3>Alumni Registration</h3>
+      <label for="alumniName">Name:</label>
+      <input type="text" id="alumniName" name="alumniName" required>
+
+      <label for="alumniEmail">Email:</label>
+      <input type="email" id="alumniEmail" name="alumniEmail" required>
+
+      <label for="alumniGraduationYear">Graduation Year:</label>
+      <input type="number" id="alumniGraduationYear" name="alumniGraduationYear" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section id="students">
+    <h2>Students</h2>
+    <p>Connect with alumni, find mentorship opportunities, and stay updated with events.</p>
+    <button onclick="showForm('students')">Register as Student</button>
+
+    <form id="studentForm" class="hidden">
+      <h3>Student Registration</h3>
+      <label for="studentName">Name:</label>
+      <input type="text" id="studentName" name="studentName" required>
+
+      <label for="studentEmail">Email:</label>
+      <input type="email" id="studentEmail" name="studentEmail" required>
+
+      <label for="studentYear">Current Year:</label>
+      <input type="number" id="studentYear" name="studentYear" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Alumni & Student Portal</p>
+  </footer>
+
+  <script src="java.js"></script>
+</body>
+</html>
